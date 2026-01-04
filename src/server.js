@@ -37,16 +37,7 @@ const firebaseApp = initializeApp(firebaseConfig);
 const db = getFirestore(firebaseApp);
 
 // ================= MIDDLEWARE =================
-app.use(cors({
-  origin: [
-    "http://localhost:5173",
-    "http://localhost:5174",
-    "http://localhost:3000",
-    "http://127.0.0.1:5173",
-    "http://127.0.0.1:5174"
-  ],
-  credentials: true
-}));
+app.use(cors());
 
 app.use(express.json());
 

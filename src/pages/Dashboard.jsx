@@ -249,7 +249,7 @@ const handleSendMessage = async () => {
       userEmail: user?.email
     };
 
-    const response = await fetch("http://localhost:3002/api/ai-chat", {
+    const response = await fetch("https://dayzy.onrender.com/api/ai-chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
